@@ -3,54 +3,85 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Client Intake & Follow-Up Kit</title>
-  <meta name="description" content="A practical AI-assisted client intake kit for freelancers, consultants, and small service businesses.">
+  <title>CalendarCalc Pages — Free Date, Deadline, and Business Day Calculators</title>
+  <meta name="description" content="Free date calculators for business days, deadlines, date differences, calendar math, and simple scheduling.">
   <style>
-    body{font-family:Arial,sans-serif;margin:0;color:#162033;background:#f7f7f4;line-height:1.55} .wrap{max-width:880px;margin:0 auto;padding:48px 22px} .hero{background:#fff;border:1px solid #e6e2d8;border-radius:18px;padding:36px;box-shadow:0 8px 30px rgba(0,0,0,.04)} h1{font-size:44px;line-height:1.05;margin:0 0 16px} h2{margin-top:34px}.sub{font-size:20px;color:#4b5563}.price{font-size:28px;font-weight:700}.button{display:inline-block;background:#172033;color:white;text-decoration:none;padding:14px 22px;border-radius:10px;font-weight:700}.button.secondary{background:#fff;color:#172033;border:1px solid #172033}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}.card{background:white;border:1px solid #e6e2d8;border-radius:14px;padding:18px}.note{font-size:14px;color:#64748b}.cta{background:#172033;color:#fff;border-radius:18px;padding:30px;margin-top:36px}.cta a{background:white;color:#172033}.small{font-size:13px;color:#64748b}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.links a{margin-right:14px;color:#172033;font-weight:700}
+    body{font-family:Arial,sans-serif;margin:0;background:#f8fafc;color:#172033;line-height:1.55}.wrap{max-width:1050px;margin:auto;padding:34px 20px}.hero{background:white;border:1px solid #e2e8f0;border-radius:18px;padding:32px;box-shadow:0 8px 28px rgba(15,23,42,.05)}h1{font-size:42px;line-height:1.05;margin:0 0 12px}h2{margin-top:34px}.sub{font-size:19px;color:#475569}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}.card{background:white;border:1px solid #e2e8f0;border-radius:14px;padding:18px}label{display:block;font-weight:700;margin-top:10px}input,select,button{font:inherit;padding:10px;border-radius:9px;border:1px solid #cbd5e1}button{background:#172033;color:#fff;font-weight:700;cursor:pointer;margin-top:12px}.result{background:#ecfeff;border:1px solid #a5f3fc;border-radius:10px;padding:12px;margin-top:12px;min-height:24px}.note{font-size:13px;color:#64748b}.footer{margin-top:42px;color:#64748b;font-size:14px}.pill{display:inline-block;background:#e0f2fe;color:#075985;padding:4px 9px;border-radius:999px;font-size:13px;font-weight:700}nav{margin:18px 0}nav a{margin-right:14px;color:#075985;font-weight:700}.tool-link{display:block;margin-top:8px;color:#075985;font-weight:700}
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <section class="hero">
-      <p class="note">For freelancers, consultants, and small service businesses</p>
-      <h1>Stop losing leads in messy intake and follow-up.</h1>
-      <p class="sub">A practical AI-assisted client intake kit with questionnaires, call scripts, follow-up emails, prompts, and a simple SOP you can start using today.</p>
-      <p class="price">$19</p>
-      <div class="hero-actions">
-        <a class="button" href="https://buy.stripe.com/3cI7sE9F79Vxfu12kX1wY00">Buy the kit</a>
-        <a class="button secondary" href="free-sample.html">View free sample</a>
+<main class="wrap">
+  <nav><a href="index.html">Calculators</a><a href="deadline-calculator.html">Deadline calculator</a><a href="weekday-lookup.html">Weekday lookup</a><a href="about.html">About</a><a href="privacy.html">Privacy</a></nav>
+  <section class="hero">
+    <span class="pill">Free tools</span>
+    <h1>Date, deadline, and business-day calculators.</h1>
+    <p class="sub">Fast, simple calculators for planning deadlines, counting workdays, adding calendar days, and estimating date differences. No account required.</p>
+  </section>
+
+  <section>
+    <h2>Free calculators</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Business days between dates</h3>
+        <p class="note">Count weekdays between two dates, including both selected dates.</p>
+        <label>Start date <input id="bdStart" type="date"></label>
+        <label>End date <input id="bdEnd" type="date"></label>
+        <button onclick="businessDaysBetween()">Calculate business days</button>
+        <div id="bdResult" class="result"></div>
       </div>
-      <p class="small">Secure checkout via Stripe. Digital product. For one individual or business; no resale or redistribution.</p>
-    </section>
 
-    <section id="included">
-      <h2>What you get</h2>
-      <div class="grid">
-        <div class="card"><strong>Client intake questionnaire</strong><br>Collect goals, constraints, budget, timeline, and fit signals before the call.</div>
-        <div class="card"><strong>Discovery call script</strong><br>Run cleaner calls without sounding robotic.</div>
-        <div class="card"><strong>Scope clarifier</strong><br>Turn vague conversations into clear deliverables and boundaries.</div>
-        <div class="card"><strong>Follow-up emails</strong><br>Templates for after calls, proposals, missing info, and polite nudges.</div>
-        <div class="card"><strong>AI prompt pack</strong><br>Prompts to summarize intakes, turn notes into next steps, and draft proposal outlines.</div>
-        <div class="card"><strong>Implementation SOP</strong><br>A simple repeatable workflow for every new lead.</div>
+      <div class="card">
+        <h3>Add calendar days</h3>
+        <p class="note">Add or subtract regular calendar days from any date.</p>
+        <label>Start date <input id="calStart" type="date"></label>
+        <label>Days to add <input id="calDays" type="number" value="30"></label>
+        <button onclick="addCalendarDays()">Calculate date</button>
+        <div id="calResult" class="result"></div>
       </div>
-    </section>
 
-    <section>
-      <h2>Who this is for</h2>
-      <p>This is for solo consultants, freelancers, agencies, and service providers who want a more professional sales process without buying a complex CRM or hiring a consultant.</p>
-    </section>
+      <div class="card">
+        <h3>Add business days</h3>
+        <p class="note">Estimate a weekday deadline while skipping Saturdays and Sundays.</p>
+        <label>Start date <input id="workStart" type="date"></label>
+        <label>Business days to add <input id="workDays" type="number" value="10"></label>
+        <button onclick="addBusinessDays()">Calculate workday deadline</button>
+        <div id="workResult" class="result"></div>
+        <a class="tool-link" href="deadline-calculator.html">Open full deadline calculator →</a>
+      </div>
 
-    <section>
-      <h2>Honest promise</h2>
-      <p>This kit will not magically close clients for you. It gives you a cleaner process, better questions, reusable copy, and AI prompts that help you respond faster and more clearly.</p>
-      <p class="links"><a href="faq.html">FAQ</a><a href="free-sample.html">Free sample</a></p>
-    </section>
+      <div class="card">
+        <h3>Date difference</h3>
+        <p class="note">Find the number of calendar days between two dates.</p>
+        <label>First date <input id="diffA" type="date"></label>
+        <label>Second date <input id="diffB" type="date"></label>
+        <button onclick="dateDiff()">Calculate difference</button>
+        <div id="diffResult" class="result"></div>
+        <a class="tool-link" href="weekday-lookup.html">Look up a weekday →</a>
+      </div>
+    </div>
+  </section>
 
-    <section class="cta">
-      <h2>Get the AI Client Intake & Follow-Up Kit</h2>
-      <p>Download the templates, customize them, and use them in your next lead conversation.</p>
-      <a class="button" href="https://buy.stripe.com/3cI7sE9F79Vxfu12kX1wY00">Buy now for $19</a>
-    </section>
-  </main>
+  <section class="card">
+    <h2>How to use these calculators</h2>
+    <p>Use the business-day calculators for project timelines, response windows, filing reminders, content calendars, and internal planning. These tools are for general planning only and are not legal, financial, tax, medical, or compliance advice.</p>
+  </section>
+
+  <section class="card">
+    <h2>More free tools</h2>
+    <ul><li><a href="deadline-calculator.html">Free deadline calculator</a></li><li><a href="weekday-lookup.html">Weekday lookup tool</a></li></ul>
+  </section>
+
+  <p class="footer">CalendarCalc Pages. Free utility site. Privacy-friendly by default: no login and no personal data required for these calculators.</p>
+</main>
+<script>
+function parseDate(id){const v=document.getElementById(id).value;return v?new Date(v+'T00:00:00'):null}
+function fmt(d){return d.toLocaleDateString(undefined,{weekday:'long',year:'numeric',month:'long',day:'numeric'})}
+function isBiz(d){const day=d.getDay();return day!==0&&day!==6}
+function businessDaysBetween(){const a=parseDate('bdStart'),b=parseDate('bdEnd');if(!a||!b){bdResult.textContent='Choose both dates.';return}let start=new Date(Math.min(a,b)),end=new Date(Math.max(a,b)),count=0;for(let d=new Date(start);d<=end;d.setDate(d.getDate()+1)){if(isBiz(d))count++}bdResult.textContent=`${count} business days, counting both start and end dates.`}
+function addCalendarDays(){const d=parseDate('calStart'),n=parseInt(calDays.value,10);if(!d||isNaN(n)){calResult.textContent='Choose a date and number of days.';return}d.setDate(d.getDate()+n);calResult.textContent=fmt(d)}
+function addBusinessDays(){let d=parseDate('workStart'),n=parseInt(workDays.value,10);if(!d||isNaN(n)){workResult.textContent='Choose a date and number of business days.';return}let added=0,step=n>=0?1:-1;while(added!==n){d.setDate(d.getDate()+step);if(isBiz(d))added+=step}workResult.textContent=fmt(d)}
+function dateDiff(){const a=parseDate('diffA'),b=parseDate('diffB');if(!a||!b){diffResult.textContent='Choose both dates.';return}const ms=Math.abs(b-a),days=Math.round(ms/86400000);diffResult.textContent=`${days} calendar days apart.`}
+(function(){const today=new Date().toISOString().slice(0,10);['bdStart','calStart','workStart','diffA'].forEach(id=>document.getElementById(id).value=today);let next=new Date();next.setDate(next.getDate()+30);['bdEnd','diffB'].forEach(id=>document.getElementById(id).value=next.toISOString().slice(0,10));})();
+</script>
 </body>
 </html>
