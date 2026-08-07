@@ -7,6 +7,12 @@
 - Business days from today: https://njcleichner-ship-it.github.io/opskit-ai/business-days-from-today.html
 - Date difference calculator: https://njcleichner-ship-it.github.io/opskit-ai/date-difference-calculator.html
 - Time zone meeting helper: https://njcleichner-ship-it.github.io/opskit-ai/time-zone-meeting-helper.html
+- Days from today: https://njcleichner-ship-it.github.io/opskit-ai/days-from-today.html
+- Workday deadline examples: https://njcleichner-ship-it.github.io/opskit-ai/workday-deadline-examples.html
+
+## Verification log
+- 2026-08-06: Homepage and deadline calculator verified HTTP 200 after commit d933643.
+- 2026-08-06: Business days from today, date difference calculator, time zone meeting helper, and sitemap verified HTTP 200 after commit bf1cf0a.
 
 ## Revenue
 - Confirmed revenue: $0
