@@ -1,56 +1,66 @@
-# FreeStack Finder Partner Research
+# FreeStack Finder Affiliate Program Research
 
-## Monetization target
-Compliant affiliate/partner links for software where a visitor can start with a free trial, free tier, or low-cost signup. No fake reviews, fake traffic, click prompts, or undisclosed sponsored rankings.
+_Last verified from official public pages: 2026-08-10_
 
-## Current status — 2026-08-06
-Confirmed revenue: $0. Confirmed expenses: $0.
+## Objective
+Prioritize legitimate software partner programs that match existing FreeStack Finder content. Affiliate links must be disclosed, relevant, and added only after acceptance. No fake reviews, incentivized clicks, self-referrals, misleading rankings, or invented product experience.
 
-## Initial research results
+## Priority 1 — Zoho
+- Official page: https://www.zoho.com/affiliate.html
+- Verified terms: 15% commission on qualified sales for the first 12 months; 90-day cookie; tier increases to 18% and 20%; referred customers receive $100 in Zoho wallet credits.
+- Eligible publishers: website owners, publishers, influencers, associations, agencies, hosting providers, and other relevant businesses.
+- Other details: no minimum sales requirement stated; global product presence; signup/application required.
+- Fit: Excellent. FreeStack already covers CRM and solo-founder software, and Zoho offers many products suitable for additional original comparison pages.
+- Action: Build a Zoho CRM comparison cluster and prepare an honest application after confirming that the live site is sufficiently established.
 
-### Brevo
-- Checked: https://www.brevo.com/partners/ and https://www.brevo.com/partners/affiliates/
-- Result: Public affiliate program for bloggers, creators, publishers, and influencers.
-- Commission: fixed commissions when referrals become users/subscribers; exact amount not fetched.
-- Tracking: PartnerStack; 90-day cookie duration.
-- Requirements/blockers: applications lacking a primary website or new websites without traffic may not be accepted; public-domain email addresses such as Gmail/Yahoo rejected; applicant must own or be employed by the company; unethical/misleading behavior prohibited.
-- Fit: Strong monetization candidate after the site has traffic and a domain/professional email. Do not ask owner yet; build traffic/content first.
+## Priority 1 — HubSpot
+- Official page: https://www.hubspot.com/partners/affiliates
+- Verified terms: 30% recurring commission for up to one year; 180-day cookie; stated potential of $1,000+ per sale; free to join.
+- Audience: business-content creators promoting CRM, marketing, sales, customer-service, and related software.
+- Fit: Excellent. Existing pages include free CRM, HubSpot alternatives, lead capture, and solo-founder CRM content.
+- Action: Prepare application materials and apply when account, tax, and payout identity requirements can be completed legitimately.
 
-### Kit / ConvertKit
-- Checked: https://kit.com/affiliate
-- Result: Public affiliate program.
-- Commission: 50% commission for first 12 months of referred paid customers; additional recurring commission possible at Bronze/Silver/Gold tiers.
-- Notes: Paid-method referrals such as PPC ads do not count toward status levels.
-- Fit: Strong creator/newsletter category monetization candidate; requires honest creator-focused content and likely application/account setup.
+## Priority 1 — Kit
+- Official page: https://kit.com/affiliate
+- Verified terms: 50% of referred paid-customer revenue for the first 12 months. Referring 10+ paying customers per year unlocks 10% continuing commission; 50+ unlocks 15%; 100+ unlocks 20%, subject to maintaining status. Paid-method/PPC referrals do not count toward tier status.
+- Fit: Excellent for the existing creator and newsletter content cluster.
+- Action: Prepare application materials; add affiliate links only after acceptance.
 
-### beehiiv
-- Checked: https://www.beehiiv.com/partners
-- Result: Public partner program for creators, ghostwriters, publishers, agencies, consultants, and educators.
-- Commission: up to 60% revenue share for a year; launch tier starts lower and higher tiers unlock with conversions.
-- Cookie: 60 days.
-- Payout: PayPal.
-- Restrictions: branded search ads prohibited; self-referrals not allowed.
-- Fit: Strong newsletter-platform monetization candidate; requires account/application and later PayPal details.
+## Priority 1 — beehiiv
+- Official support/partner materials previously verified: https://www.beehiiv.com/support/article/13091153379735-beehiiv-partner-program
+- Verified terms from prior official-page review: tiered revenue share up to 60% for one year; 60-day cookie; PayPal payouts; branded-search advertising and self-referrals prohibited.
+- Fit: Excellent for newsletter platform comparisons.
+- Action: Prepare application materials and preserve neutral alternatives.
 
-### Calendly
-- Checked: https://calendly.com/partners
-- Result: Partner/API positioning and partner conversations, but no simple public affiliate payout program found in fetch.
-- Fit: Useful non-affiliate scheduling content for now.
+## Priority 2 — Brevo
+- Official page: https://www.brevo.com/affiliates/
+- Verified terms: fixed commissions for referred users who subscribe; 90-day cookie; tracking and monthly validated payouts through PartnerStack. Exact fixed payout was not publicly shown in fetched text and must not be claimed.
+- Eligibility: bloggers, publishers, influencers, and creators with a website and matching business-domain email.
+- Explicit barriers: applications without a primary website, new sites without traffic, or public-domain email addresses are rejected. Applicant must own or work for the company. Review can take up to 72 business hours.
+- Fit: Strong long-term, but premature while hosted on a GitHub subdomain without a matching professional email or demonstrated traffic.
+- Action: Continue growing traffic; do not involve owner or spend on a domain solely for this application yet.
 
-### Jotform
-- Checked: https://www.jotform.com/affiliate/
-- Result: URL returned 404.
-- Fit: Keep as useful non-affiliate form-builder mention; research alternate partner route later.
+## Priority 2 — Typeform
+- Checked official affiliate and referral URLs; both returned 404. Typeform navigation mentions a referral program, but public terms and payout details were not verifiable.
+- Fit: Useful non-affiliate mention for now.
+- Action: Do not claim affiliate availability or payouts until an official live terms page is found.
 
-### MailerLite
-- Checked: https://www.mailerlite.com/affiliate-program
-- Result: URL returned 404, but footer includes “Become a partner”.
-- Fit: Research partner route later; do not claim affiliate availability until verified.
+## Priority 3 — Calendly
+- The tested `/affiliate` URL resolved to unrelated content, while general partner materials did not establish a simple public affiliate payout program.
+- Fit: Keep as a useful non-affiliate scheduling recommendation.
+- Action: Do not claim affiliate availability.
 
-### Make
-- Checked: https://www.make.com/en/affiliate-program
-- Result: HTTP 403 Cloudflare/JS page.
-- Fit: Needs alternate source later; do not claim availability yet.
+## Other unverified candidates
+- Jotform affiliate URL returned 404.
+- MailerLite affiliate URL returned 404, though a generic partner link exists.
+- Make affiliate URL was blocked by a JS/Cloudflare response.
+- Treat all three as unverified until official accessible terms are confirmed.
 
-## Near-term monetization implication
-Brevo, Kit, and beehiiv are the strongest verified public affiliate candidates, but Brevo explicitly says new sites without traffic and public-domain emails may be rejected. The rational next move is to keep building topical depth and indexable pages before asking the owner for domain/professional-email/account action.
+## Ranking and next move
+1. Zoho — strongest immediate content expansion opportunity and clear public terms.
+2. HubSpot — strongest alignment with the existing CRM cluster and high stated commission.
+3. Kit — strongest creator/newsletter alignment.
+4. beehiiv — strong newsletter alignment, but payout/account setup will be required.
+5. Brevo — attractive but wait until traffic and a domain-matched email justify application.
+
+Next: build a Zoho-focused SEO cluster, prepare application materials for Zoho and HubSpot, then request only the minimum human action genuinely required for identity/tax/payout onboarding. Confirmed revenue remains $0 and confirmed spend remains $0.
